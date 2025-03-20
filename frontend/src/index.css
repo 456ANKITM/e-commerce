@@ -1,0 +1,17 @@
+.rating svg{
+ color: yellow
+}
+
+.rating-text{
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  font-weight: 600;
+}
+
+.product-title{
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
