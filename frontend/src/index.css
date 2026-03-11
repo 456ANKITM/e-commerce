@@ -1,3 +1,4 @@
+@import "tailwindcss";
 .rating svg{
  color: yellow
 }
@@ -13,5 +14,39 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-title a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-title a:hover {
+  color: #007bff;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.rating-wrapper {
+  margin: 6px 0;
 }
 

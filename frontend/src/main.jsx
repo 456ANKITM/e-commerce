@@ -19,6 +19,7 @@ import AdminRoute from "./components/AdminRoute.jsx";
 import OrderListPage from "./Pages/OrderListPage.jsx";
 import ProductListPage from "./Pages/ProductListPage.jsx";
 import ProductEditPage from "./Pages/ProductEditPage.jsx";
+import Signup from "./Pages/Signup.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/products/:id" element={<ProductPage />} />
           <Route path="cart" element={<CartPage />} />
           <Route path="signin" element={<SigninPage />} />
+          <Route path='signup' element={<Signup />} /> 
 
           <Route Path="" element={<PrivateRoute />}>
             <Route path="shipping" element={<ShippingPage />} />
